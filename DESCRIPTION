@@ -16,3 +16,5 @@ RoxygenNote: 7.1.1
 url: https://github.com/helenevangelinaa/cwdata
 Depends: 
     R (>= 2.10)
+Imports: 
+    tibble
