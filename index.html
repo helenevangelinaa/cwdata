@@ -46,6 +46,18 @@
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+<li>
+      <a href="articles/crops.html">Our World in Data: Key crop Yields</a>
+    </li>
+  </ul>
+</li>
       </ul>
 <ul class="nav navbar-nav navbar-right"></ul>
 </div>
@@ -70,22 +82,20 @@
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>You can install the released version of cwdata from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"cwdata"</span>)
-</pre></div>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"cwdata"</span><span class="op">)</span></pre></div>
 <p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
-<span class="kw">devtools</span>::<span class="fu">install_github</span>(<span class="st">"helenevangelinaa/cwdata"</span>)
-</pre></div>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"helenevangelinaa/cwdata"</span><span class="op">)</span></pre></div>
 </div>
 <div id="example" class="section level2">
 <h2 class="hasAnchor">
 <a href="#example" class="anchor"></a>Example</h2>
 <p>This is a basic example which shows you how to solve a common problem:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw">cwdata</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://tibble.tidyverse.org">tibble</a></span>)
-<span class="kw">key_crop_yields</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">cwdata</span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tibble.tidyverse.org/">tibble</a></span><span class="op">)</span>
+<span class="va">key_crop_yields</span>
 <span class="co">#&gt; # A tibble: 143,825 x 5</span>
 <span class="co">#&gt;    country     code   year crop     tonnes_per_hectare</span>
 <span class="co">#&gt;    &lt;chr&gt;       &lt;chr&gt; &lt;dbl&gt; &lt;chr&gt;                 &lt;dbl&gt;</span>
@@ -99,8 +109,7 @@
 <span class="co">#&gt;  8 Afghanistan AFG    1961 cassava               NA   </span>
 <span class="co">#&gt;  9 Afghanistan AFG    1961 barley                 1.08</span>
 <span class="co">#&gt; 10 Afghanistan AFG    1961 cocoa                 NA   </span>
-<span class="co">#&gt; # ... with 143,815 more rows</span>
-</pre></div>
+<span class="co">#&gt; # ... with 143,815 more rows</span></pre></div>
 </div>
 </div>
   </div>
